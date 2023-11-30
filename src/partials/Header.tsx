@@ -8,7 +8,7 @@ export function Header() {
     <View style={styles.container}>
       <View>
         <Text>Nutrição personalizada: alimente seu corpo, transforme sua vida!</Text>
-        <Link href="@/(tabs)/menu" asChild>
+        <Link href="@/images/menu" asChild>
           <Button title="Meu Cardápio" />
         </Link>
       </View>

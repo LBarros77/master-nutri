@@ -25,12 +25,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
-    },
-    "experiments": {
-      "typedToutes": true,
-      "tsconfigPaths": true
+      "favicon": "./assets/favicon.png"
     }
   }
 }
