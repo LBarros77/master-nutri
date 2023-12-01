@@ -1,16 +1,27 @@
 import { View, Text, Button } from 'react-native';
-import { Link } from 'expo-router';
-import styles from '@/assets/styles/styles';
-import Logo from '@/assets/images/logo.svg';
+import styles from '@styles/styles';
+import Logo from '@images/logo.svg';
+import { NavigationContainer } from '@react-navigation/native';
 
 export function Header() {
   return (
     <View style={styles.container}>
       <View>
         <Text>Nutrição personalizada: alimente seu corpo, transforme sua vida!</Text>
-        <Link href="@/images/menu" asChild>
+        <NavigationContainer
+          linking={{
+            prefixes: ["exp://192.168.1.107:8081/--/masternutri"],
+            config: {
+              screens: {
+                menu: {
+                  path: "menu"
+                }
+              },
+            },
+          }}
+        >
           <Button title="Meu Cardápio" />
-        </Link>
+        </NavigationContainer>
       </View>
       <View>
         <Logo width={20} height={20} />

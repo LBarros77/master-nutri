@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native';
-import styles from '../assets/styles/styles';
+import styles from '@styles/styles';
+import { Header } from '@/partials/Header';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>I'm on Home</Text>
+      <Header />
     </View>
   )
 }

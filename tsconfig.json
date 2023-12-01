@@ -1,7 +1,18 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "es6"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
     "strict": true,
+    "target": "esnext",
     "baseUrl": "./",
     "paths": {
       "@/*": [
@@ -12,6 +23,9 @@
       ],
       "@images/*": [
         "src/assets/images/*"
+      ],
+      "@screens/*": [
+        "src/screens/*"
       ]
     }
   },
@@ -21,6 +35,10 @@
   ],
   "exclude": [
     "node_modules",
-    "build"
+    "build",
+    "expo",
+    "babel.config.js",
+    "metro.config.d.ts",
+    "jest.config.js"
   ]
 }
