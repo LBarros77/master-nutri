@@ -1,30 +1,18 @@
 import { View, Text, Button } from 'react-native';
-import styles from '@styles/styles';
-import Logo from '@images/logo.svg';
-import { NavigationContainer } from '@react-navigation/native';
+import styles from '../assets/styles/styles';
+import SvgUri from 'react-native-svg-uri';
 
 export function Header() {
   return (
-    <View style={styles.container}>
-      <View>
-        <Text>Nutrição personalizada: alimente seu corpo, transforme sua vida!</Text>
-        <NavigationContainer
-          linking={{
-            prefixes: ["exp://192.168.1.107:8081/--/masternutri"],
-            config: {
-              screens: {
-                menu: {
-                  path: "menu"
-                }
-              },
-            },
-          }}
-        >
+    <View style={styles.header}>
+      <View style={styles.rowCols2}>
+        <View style={{width: 200}}>
+          <Text style={styles.h2}>Nutrição personalizada: Alimente seu corpo, transforme sua vida!</Text>
           <Button title="Meu Cardápio" />
-        </NavigationContainer>
-      </View>
-      <View>
-        <Logo width={20} height={20} />
+        </View>
+        <View>
+          <SvgUri width="180" height="180" source={require("../assets/images/Group_1.svg")} />
+        </View>
       </View>
     </View>
   )

@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native';
-import styles from '@styles/styles';
+import styles from '../assets/styles/styles';
 
 export default function Menu() {
   return (

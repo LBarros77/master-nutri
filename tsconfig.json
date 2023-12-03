@@ -7,25 +7,26 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": [
-      "es6"
+      "ES6",
+      "ES7"
     ],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
     "target": "esnext",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
       "@/*": [
-        "src/*"
+        "./*"
       ],
       "@styles/*": [
-        "src/assets/styles/*"
+        "./assets/styles/*"
       ],
       "@images/*": [
-        "src/assets/images/*"
+        "./assets/images/*"
       ],
       "@screens/*": [
-        "src/screens/*"
+        "./screens/*"
       ]
     }
   },
@@ -34,11 +35,6 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
-    "build",
-    "expo",
-    "babel.config.js",
-    "metro.config.d.ts",
-    "jest.config.js"
+    "node_modules"
   ]
 }
