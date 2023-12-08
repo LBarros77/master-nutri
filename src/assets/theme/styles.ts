@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "./colors";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,6 +18,15 @@ const styles = StyleSheet.create({
   h2: {
     fontSize: 20,
     fontWeight: "600"
+  },
+  content: {
+    padding: 32,
+    gap: 16,
+    backgroundColor: colors.GRAY_600,
+  },
+  options: {
+    flexDirection: 'row',
+    gap: 7
   }
 });
 

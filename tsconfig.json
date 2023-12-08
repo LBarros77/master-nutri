@@ -7,6 +7,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": [
+      "ES2021",
       "ES6",
       "ES7"
     ],
@@ -19,8 +20,8 @@
       "@/*": [
         "./*"
       ],
-      "@styles/*": [
-        "./assets/styles/*"
+      "@theme/*": [
+        "./assets/theme/*"
       ],
       "@images/*": [
         "./assets/images/*"
