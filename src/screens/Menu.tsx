@@ -70,7 +70,7 @@ export default function Menu() {
     <SafeAreaView>
       {toastMessage && <Toast message={toastMessage} />}
 
-      <Header title="Cardápio" />
+      <Header title="Receita" />
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <Box m="m">
@@ -84,7 +84,7 @@ export default function Menu() {
 
           <Box my="m">
             <Button
-              title="Gerar tags"
+              title="Gerar Receita"
               onPress={handleFetchMenu}
               isLoading={isLoading}
             />

@@ -22,7 +22,7 @@ export default function TabRoutes() {
         component={Menu}
         options={{
           tabBarIcon: ({color, size}) => <Feather name="clipboard" color={color} size={size} />,
-          tabBarLabel: "Meu Cardápio"
+          tabBarLabel: "Receita"
         }}
       />
       <Tab.Screen
