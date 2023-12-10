@@ -8,19 +8,14 @@ export const textVariants = {
   title: {
     fontSize: 24,
   },
-  label: {
-    fontSize: 16
+  title2: {
+    fontSize: 20,
   },
-  sub_title: {
-    fontSize: 24,
-  },
-  btn_primary: {
+  title3: {
     fontSize: 16,
-    color: colors.white,
   },
-  btn_secundary: {
-    fontSize: 16,
-    color: colors.orangeDark,
+  title4: {
+    fontSize: 12,
   },
   fontFamily: {
     primary: {

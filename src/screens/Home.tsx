@@ -1,6 +1,6 @@
 import { createBox, createText } from "@shopify/restyle";
 import SvgUri from 'react-native-svg-uri';
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, View } from "react-native";
 
 import { Button } from "../components/Button";
 import { ThemeProps } from "../assets/theme";
@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <Box flex={1} position="relative" mt="xl" ml="m" mr="m" mb="m">
       <Header title="Master Nutri" />
+      {/* <Text textAlign="center" color="GRAY_200">Alimente seu corpo, transforme sua vida!</Text> */}
       <ScrollView showsVerticalScrollIndicator={false}>
         <Box flex={1} flexDirection="row" justifyContent="center" alignItems="center" bg="orangeLight" borderRadius={10} my="m" py="m">
           <View style={{width: 180}}>
@@ -27,7 +28,7 @@ export default function Home() {
         <Box flex={2} flexDirection="column" my="m">
 
           <Box flexDirection="column">
-            <Text variant="sub_title" >Categórias</Text>
+            <Text variant="title" >Categórias</Text>
           </Box>
           <Box flexWrap="wrap" flexDirection="row" alignItems="center" justifyContent="center" gap="m">
             <Box p="m" borderRadius={10} bg="redLight" alignItems="center">

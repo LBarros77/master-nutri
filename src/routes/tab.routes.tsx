@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Feather } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+
 import Home from "../screens/Home";
 import Menu from "../screens/Menu";
 import Profile from "../screens/Profile";
@@ -13,7 +14,7 @@ export default function TabRoutes() {
         name="Home"
         component={Home}
         options={{
-          tabBarIcon: ({color, size}) => <Feather name="home" color={color} size={size} />,
+          tabBarIcon: ({color, size}) => <Ionicons name="home" color={color} size={size} />,
           tabBarLabel: "Início"
         }}
       />
@@ -21,7 +22,7 @@ export default function TabRoutes() {
         name="Menu"
         component={Menu}
         options={{
-          tabBarIcon: ({color, size}) => <Feather name="clipboard" color={color} size={size} />,
+          tabBarIcon: ({color, size}) => <Ionicons name="clipboard" color={color} size={size} />,
           tabBarLabel: "Receita"
         }}
       />
@@ -29,7 +30,7 @@ export default function TabRoutes() {
         name="Profile"
         component={Profile}
         options={{
-          tabBarIcon: ({color, size}) => <Feather name="user" color={color} size={size} />,
+          tabBarIcon: ({color, size}) => <Ionicons name="person" color={color} size={size} />,
           tabBarLabel: "Perfil"
         }}
       />

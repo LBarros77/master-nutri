@@ -1,6 +1,6 @@
 export const colors = {
   black: '#0B0B0B',
-  white: '#F0F2F3',
+  white: '#ffffff',
 
   overlay: "rgba(0, 0, 0, 0.5)",
 
@@ -19,15 +19,15 @@ export const colors = {
   greenPrimary: '#91c789',
   greenDark: '#1f381b',
 
-  orangeLight: '#fff7f0',
-  orangePrimary: '#ff9386',
+  orangeLight: '#fff8ee',
+  orangePrimary: '#ff8474',
   orangeDark: '#ff725f',
 
   redLight: '#fff2f1',
   redPrimary: '#ff4c33',
   redDark: '#6e352d',
 
-  yellowLight: '#fef7ed',
+  yellowLight: '#F9EBB2',
   yellowPrimary: '#ffd485',
   yellowDark: '#ac7929'
 }

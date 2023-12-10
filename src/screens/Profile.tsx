@@ -1,18 +1,25 @@
-import { View, Text } from 'react-native';
-import styles from '../assets/theme/styles';
+import { ScrollView, View } from "react-native";
+import { createBox, createText } from "@shopify/restyle";
+import SvgUri from "react-native-svg-uri";
+
+import { ThemeProps } from "../assets/theme";
+import { Accordion } from "../components/Accordion";
+import { settings } from "../data/data";
+
+const Box = createBox<ThemeProps>();
+const Text = createText<ThemeProps>();
 
 export default function Profile() {
   return (
-    <View style={styles.header}>
-      <View style={styles.rowCols2}>
-        <View style={{width: 200}}>
-          <Text style={styles.h2}>Nutrição personalizada: Alimente seu corpo, transforme sua vida!</Text>
-          {/* <Button title="Meu Cardápio" /> */}
-        </View>
-        <View>
-          {/* <SvgUri width="180" height="180" source={require("../assets/images/Group_1.svg")} /> */}
-        </View>
-      </View>
-    </View>
+    <Box flex={1} justifyContent="center" alignItems="center">
+      <Box p="l" mt="xl" mb="l">
+        <SvgUri width={200} height={200} source={require("../assets/images/man-svgrepo-com.svg")} />
+      </Box>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {settings.map((value, index) => {
+          return <Accordion value={value} key={index} type={value.type} />;
+        })}
+      </ScrollView>
+    </Box>
   )
 }
