@@ -31,5 +31,10 @@ export const textVariants = {
     lg: 20,
     xl: 24,
     xxl: 32,
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: 500,
+    color: colors.GRAY_300
   }
 }

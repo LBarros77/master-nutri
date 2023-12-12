@@ -3,7 +3,7 @@ import {ThemeProvider} from '@shopify/restyle';
 import theme from './src/assets/theme';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts, NotoSans_400Regular, NotoSans_700Bold, NotoSans_800ExtraBold } from "@expo-google-fonts/noto-sans";
-import { Loading } from "./src/components/Loading/Loading";
+import { Loading } from "./src/components/Animations/Loading/Loading";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

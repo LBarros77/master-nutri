@@ -1,5 +1,7 @@
+import { Ionicons } from "@expo/vector-icons";
+
 export type SettingsProps = {
-  icon: string;
+  icon: keyof typeof Ionicons.glyphMap;
   title: string;
   content: string[];
   type: string

@@ -3,14 +3,14 @@ import { Alert, ScrollView } from "react-native";
 import { createBox } from "@shopify/restyle";
 
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { TextArea } from '../components/TextArea';
-import { Input } from "../components/Input/Input";
-import { Button } from '../components/Button';
-import { Header } from "../components/Header";
-import { Modal } from "../components/Modal";
-import { Toast } from "../components/Toast";
+import { TextArea } from '../components/Controllers/TextArea';
+import { Input } from "../components/Controllers/Input";
+import { Button } from '../components/Controllers/Button';
+import { Header } from "../components/Layout/Header";
+import { Modal } from "../components/Layout/Modal";
+import { Toast } from "../components/Animations/Toast";
 import { ThemeProps } from "../assets/theme";
-import { Content } from "../components/Content/Content";
+import { Content } from "../components/Layout/Content/Content";
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 

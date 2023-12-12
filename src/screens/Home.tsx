@@ -2,9 +2,9 @@ import { createBox, createText } from "@shopify/restyle";
 import SvgUri from 'react-native-svg-uri';
 import { ScrollView, View } from "react-native";
 
-import { Button } from "../components/Button";
+import { Button } from "../components/Controllers/Button";
 import { ThemeProps } from "../assets/theme";
-import { Header } from "../components/Header";
+import { Header } from "../components/Layout/Header";
 
 const Box = createBox<ThemeProps>();
 const Text = createText<ThemeProps>();

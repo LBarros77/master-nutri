@@ -3,7 +3,7 @@ import { createBox, createText } from "@shopify/restyle";
 import SvgUri from "react-native-svg-uri";
 
 import { ThemeProps } from "../assets/theme";
-import { Accordion } from "../components/Accordion";
+import { Accordion } from "../components/Controllers/Accordion";
 import { settings } from "../data/data";
 
 const Box = createBox<ThemeProps>();
