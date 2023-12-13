@@ -1,6 +1,6 @@
 import { ThemeProps } from "../../../assets/theme";
 import { createBox, createText } from "@shopify/restyle";
-import { Pressable } from "react-native";
+import { Pressable, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Animated, {
   useAnimatedRef,
@@ -11,17 +11,22 @@ import Animated, {
   measure,
   withTiming
 } from "react-native-reanimated";
+import auth from "@react-native-firebase/auth";
 
-import { SettingsProps } from "../../../data/data";
 import { styles } from "./styles";
-
-type AccordionProps = {
-  value: SettingsProps,
-  type: string
-};
+import { AccordionProps } from "../../../@types/AccordionProps";
+import { ButtonProps } from "../../../@types/ButtonProps";
 
 const Box = createBox<ThemeProps>();
 const Text = createText<ThemeProps>();
+
+function ButtonSignOut({title}: ButtonProps) {
+  return (
+    <TouchableOpacity onPress={(() => auth().signOut())}>
+      <Text variant="title2" color="GRAY_300" fontWeight="500">{title}</Text>
+    </TouchableOpacity>
+  )
+}
 
 export function Accordion({value, type}: AccordionProps) {
   const listRef = useAnimatedRef();
@@ -61,7 +66,10 @@ export function Accordion({value, type}: AccordionProps) {
             value.content.map((v, i) => {
               return (
                 <Box key={i} p="s">
-                  <Text variant="title2" color="GRAY_300" fontWeight="500">{v}</Text>
+                  {v === "Sair" ?
+                    <ButtonSignOut title={v} /> :
+                    <Text variant="title2" color="GRAY_300" fontWeight="500">{v}</Text>
+                  }
                 </Box>
               );
             })}

@@ -1,10 +1,10 @@
 import { createBox, createText } from "@shopify/restyle";
 import { KeyboardAvoidingView, Platform } from "react-native";
-
-import { ThemeProps } from "../../assets/theme";
-import { AccountForm } from "../../components/Form/SignInForm/AccountForm";
-import { ButtonCustom } from "../../components/Controllers/ButtonCustom";
 import { useNavigation } from "expo-router";
+
+import { ThemeProps } from "../assets/theme";
+import { AccountForm } from "../components/Form/AccountForm";
+import { ButtonCustom } from "../components/Controllers/ButtonCustom";
 
 const Box = createBox<ThemeProps>();
 const Text = createText<ThemeProps>();

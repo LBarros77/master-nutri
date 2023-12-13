@@ -1,8 +1,8 @@
 import { createBox, createText } from "@shopify/restyle";
 import { KeyboardAvoidingView, Platform } from "react-native";
 
-import { SignInForm } from "../../components/Form/SignInForm";
-import { ThemeProps } from "../../assets/theme";
+import { SignInForm } from "../components/Form/SignInForm";
+import { ThemeProps } from "../assets/theme";
 
 const Box = createBox<ThemeProps>();
 const Text = createText<ThemeProps>();
