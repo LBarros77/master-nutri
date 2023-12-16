@@ -9,10 +9,9 @@ export const styles = StyleSheet.create({
     borderRadius: 7,
     padding: 16,
 
-    backgroundColor: colors.GRAY_500,
+    backgroundColor: colors.GRAY_200,
 
-    color: colors.GRAY_200,
-    fontFamily: textVariants.fontFamily.primary.regular,
+    color: colors.GRAY_500,
     fontSize: textVariants.size.md,
   }
 });

@@ -1,15 +1,16 @@
 import { NavigationContainer } from '@react-navigation/native';
-import auth, { FirebaseAuthTypes } from "@react-native-firebase/auth";
 import { useState, useEffect } from 'react';
+import auth from 'firebase/auth';
 
+import { auth as authFirebase } from "../services/firebase/firebaseConfig";
 import TabRoutes from "./tab.routes";
 import { AuthRoutes } from './auth.routes';
 
 export default function Routes() {
-  const [user, setUser] = useState<FirebaseAuthTypes.User | null>(null);
+  const [user, setUser] = useState<auth.User | null>(null);
   
   useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(setUser);
+    const subscriber = authFirebase.onAuthStateChanged(setUser);
     return subscriber;
   }, []);
 

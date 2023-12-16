@@ -15,9 +15,9 @@ type Props = ModalProps & {
   onClose: () => void;
 }
 
-export function Modal({ title, children, onClose, ...rest }: Props) {
+export function Modal({ title, children, onClose, ...props }: Props) {
   return (
-    <ReactNativeModal transparent  {...rest}>
+    <ReactNativeModal transparent  {...props}>
       <BlurViewAnimated
         style={styles.overlay}
         entering={FadeIn}

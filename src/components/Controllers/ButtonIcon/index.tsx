@@ -19,7 +19,7 @@ export function ButtonIcon({
   isLoading = false,
   onPressIn = () => { },
   onPressOut = () => { },
-  ...rest
+  ...props
 }: Props) {
   const [isActive, setIsActive] = useState(false);
 
@@ -43,7 +43,7 @@ export function ButtonIcon({
       onPressIn={handleOnPressIn}
       onPressOut={handleOnPressOut}
       disabled={isLoading}
-      {...rest}
+      {...props}
     >
       {
         isLoading

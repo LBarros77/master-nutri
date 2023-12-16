@@ -9,14 +9,14 @@ type Props = TouchableOpacityProps & {
 
 const TouchableOpacityAnimated = Animated.createAnimatedComponent(TouchableOpacity);
 
-export function Tag({ title, ...rest }: Props) {
+export function Tag({ title, ...props }: Props) {
   return (
     <TouchableOpacityAnimated
       style={styles.container}
       entering={FadeIn}
       exiting={FadeOut}
       layout={Layout}
-      {...rest}
+      {...props}
     >
       <Text style={styles.title}>
         {title}

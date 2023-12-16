@@ -7,9 +7,7 @@ export type SettingsProps = {
   type: string
 };
 
-type Settings = SettingsProps[];
-
-export const settings: Settings = [
+export const settings: SettingsProps[] = [
   {
     icon: "person",
     title: "Editar Perfil",

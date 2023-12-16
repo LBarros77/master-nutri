@@ -7,7 +7,7 @@ type Props = TextInputProps & {
   onClear?: () => void;
 }
 
-export function TextArea({ value, editable, onClear, ...rest }: Props) {
+export function TextArea({ value, editable, onClear, ...props }: Props) {
   return (
     <View style={[styles.container, !editable && styles.disabled]}>
       <TextInput
@@ -16,7 +16,7 @@ export function TextArea({ value, editable, onClear, ...rest }: Props) {
         multiline
         value={value}
         editable={editable}
-        {...rest}
+        {...props}
       />
 
       {
