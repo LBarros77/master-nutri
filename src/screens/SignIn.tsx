@@ -9,12 +9,9 @@ const Text = createText<ThemeProps>();
 
 export function SignIn() {
   return (
-    <Box>
+    <Box flex={1} justifyContent="center" m="m">
       <KeyboardAvoidingView behavior={Platform.OS ==="ios" ? "padding" : undefined}>
-        <Box>
-          <Text>A sua saúde merece um cuidado especial</Text>
-          <SignInForm />
-        </Box>
+        <SignInForm />
       </KeyboardAvoidingView>
     </Box>
   )

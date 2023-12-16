@@ -1,6 +1,6 @@
 import { createBox, createText } from "@shopify/restyle";
 import { KeyboardAvoidingView, Platform } from "react-native";
-import { useNavigation } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
 
 import { ThemeProps } from "../assets/theme";
 import { AccountForm } from "../components/Form/AccountForm";
@@ -13,10 +13,9 @@ export function Register() {
   const navigation = useNavigation();
 
   return (
-    <Box>
+    <Box flex={1} justifyContent="center" m="m">
       <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <Box>
-          <Text variant="title2">Novos hábitos, nova jornada!</Text>
           <AccountForm />
           
           <ButtonCustom

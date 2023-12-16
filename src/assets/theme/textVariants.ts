@@ -7,12 +7,16 @@ export const textVariants = {
   },
   title: {
     fontSize: 24,
+    fontWeight: 500,
+    fontFamily: "NotoSans_700Bold"
   },
   title2: {
     fontSize: 20,
   },
   title3: {
     fontSize: 16,
+    fontWeight: 500,
+    fontFamily: "NotoSans_700Bold"
   },
   title4: {
     fontSize: 12,
@@ -35,6 +39,16 @@ export const textVariants = {
   label: {
     fontSize: 16,
     fontWeight: 500,
-    color: colors.GRAY_300
+    fontFamily: "NotoSans_700Bold"
+  },
+  titleAccordion: {
+    fontSize: 20,
+    fontWeight: 500,
+    fontFamily: "NotoSans_700Bold"
+  },
+  subTitleAccordion: {
+    fontSize: 18,
+    fontWeight: 400,
+    fontFamily: "NotoSans_700Bold",
   }
 }

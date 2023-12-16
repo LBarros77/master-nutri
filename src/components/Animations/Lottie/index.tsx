@@ -1,7 +1,7 @@
 import LottieView, { AnimatedLottieViewProps } from 'lottie-react-native';
 
 
-export function Lottie({ ...rest }: AnimatedLottieViewProps) {
+export function Lottie({ ...props }: AnimatedLottieViewProps) {
   return (
     <LottieView
       style={{
@@ -14,7 +14,7 @@ export function Lottie({ ...rest }: AnimatedLottieViewProps) {
       loop
       autoSize
       resizeMode="cover"
-      {...rest}
+      {...props}
     />
   );
 }

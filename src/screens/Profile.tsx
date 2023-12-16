@@ -1,4 +1,4 @@
-import { ScrollView, View } from "react-native";
+import { ScrollView } from "react-native";
 import { createBox, createText } from "@shopify/restyle";
 import SvgUri from "react-native-svg-uri";
 
